@@ -340,7 +340,7 @@ progress {
 	position:relative;
 	padding:20px;
 	overflow:hidden;
-	transition:all ease-in-out 550ms;
+	transition:all ease-in-out 700ms;
 }
 
 
@@ -353,15 +353,15 @@ progress {
 	max-width: 100%;
 	height: auto;
 	border:1px solid navy;
-	transform: translateX(80px);
+	transform: translateY(80px);
 }
 
 .grid-item:nth-child(odd) img{
-	transform: translateX(-80px);
+	transform: translateY(80px);
 }
 
 .grid-item.appear img{
-	transform: translateX(0);
+	transform: translateY(0);
 }
 
 .grid-item:hover{
