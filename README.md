@@ -1,5 +1,5 @@
 # csoy
 
-First delpoy CSOY
+First deploy CSOY
 
 All basic functionalty done.
