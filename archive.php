@@ -16,7 +16,7 @@ get_header();
 
 	<main id="primary" class="container" >
 
-		<h2 class="ml16"> 
+		<h2> 
 
 <?php
   $term = get_term_by( 'slug', get_query_var('term'), get_query_var('taxonomy') );

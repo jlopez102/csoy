@@ -76,20 +76,8 @@ exit.addEventListener('click' , () => {
        appearOnScroll.observe(fader);
    });
    
-   
-/******MASONRY******/
-   var elem = document.querySelector('.grid');
-var msnry = new Masonry( elem, {
- // options
- itemSelector: '.grid-item',
- columnWidth: 800
-});
 
-// element argument can be a selector string
-//   for an individual element
-var msnry = new Masonry( '.grid', {
- // options
-});
+  
 
    
    const hero = document.querySelectorAll('.hero h1');
@@ -211,7 +199,10 @@ image.forEach((hover) => {
 
 if (!hasPlayed) {*/
         
-    const textrev = gsap.timeline();
+  
+
+
+const textrev = gsap.timeline();
    
    textrev.from(".loader span", 1.2,{
     margin: '-50px 0 0 0',
@@ -222,9 +213,8 @@ if (!hasPlayed) {*/
     opacity:0,
     delay:.5,
 })
-    .to(".loader", 1.2,{
-       /*top: "-120%",*/
-       borderWidth:380,
+    .to(".loader", 0.8,{
+       borderWidth:500,
        ease: Expo.easeInOut,
         delay: .2,
    })
@@ -234,13 +224,13 @@ if (!hasPlayed) {*/
 .to('.loader', .1, {
     left: "-120%", 
 })
-   .to('.video--container',1, {
+   .to('.video--container',0.8, {
        borderWidth:0,
        ease: Expo.easeInOut,
    }, '-=1')
        .from('.logo a', 1, {
            opacity:0,
-   }/*, "= 3.2"*/)
+   })
    .from('.nav-trigger', 1, {
            opacity:0,
            
@@ -259,8 +249,11 @@ if (!hasPlayed) {*/
    }, '-=1')
    ;
    
-/*
+
+   /*
+
 }
+
 
 else{
    console.log('Loaded');
@@ -295,6 +288,13 @@ gsap.to('progress', {
     }
   });
 
+
+   
+/******MASONRY******/
+var colcade = new Colcade( '.grid', {
+    columns: '.grid-col',
+    items: '.grid-item'
+  });
 
 
 

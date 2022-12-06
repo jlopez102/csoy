@@ -28,8 +28,9 @@ get_header();
     </div>	
     
     <div class="headline" id="headline">
-      <h1>CESAR LOPEZ</h1>
-      <h2 class="fade-in">Photographer/ Filmographer</h2>
+      <h1>CSOY</h1>
+      <h2 class="fade-in">Through the Glass</h2>
+      <div class="circle"></div>
     </div>
 	</div>
 
@@ -53,6 +54,11 @@ get_header();
 
 <h2 class="fade-in">Projects</h2>
 <div class="gallery-item group grid">
+  <div class="grid-col grid-col--1"></div>
+  <div class="grid-col grid-col--2"></div>
+  <div class="grid-col grid-col--3"></div>
+  <div class="grid-col grid-col--4"></div>
+
   <?php if ($wpbp->have_posts()) :  while ($wpbp->have_posts()) : $wpbp->the_post(); ?>  
 
 	 <?php if ( (function_exists('has_post_thumbnail')) && (has_post_thumbnail()) ) :  ?>  
@@ -76,13 +82,29 @@ get_header();
     
 
 	</main><!-- #main -->
-
+  
+  <section class="blue">
     <div class="marquee">
   <div>
     <span>The World Is Yours *</span>
     <span>The World Is Yours *</span>
   </div>
 </div>
+   </section>
+
+<section class="contact">
+<div>
+  <h3>Cesar Lopez</h3>
+  <p>Chicago based photographer focusing on street style and stories told through film.</p>
+  <div></div>
+
+  <ul>
+    <li><span></span>Email</li>
+    <li><span></span>Instagram</li>
+    <li><span></span>Youtube</li>
+  </ul>
+</div>
+   </section>
 
 <?php
 get_sidebar();
