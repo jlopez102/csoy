@@ -25,19 +25,34 @@ get_header();
                         <source src="<?php echo get_template_directory_uri(); ?>/assets/fashon.mp4" type="video/mp4">
                       Your browser does not support the video tag.
                       </video>
+
+                      <div class="scroll-circle"><span>Scroll</span></div>
     </div>	
     
-    <div class="headline" id="headline">
+    <!--<div class="headline" id="headline">
       <h1>CSOY</h1>
       <h2 class="fade-in">Through the Glass</h2>
       <div class="circle"></div>
-    </div>
+    </div>-->
 	</div>
 
 <!----- closes out header ------>
 </div>
 
+
+<section class="tagline">
+<div>
+<h2 class="fade-in">Quien Soy?(Who Am I)</h2>
+<h1 class="fade-in">CSOY</h1>
+<h3 class="fade-in">Photographer/Videographer</h3>
+</div>
+</section>
+
+
 <main id="primary" class="container" >
+
+
+
 
 	<?php  
     $wpbp = new WP_Query(array(  
@@ -86,22 +101,22 @@ get_header();
   <section class="blue">
     <div class="marquee">
   <div>
-    <span>The World Is Yours *</span>
-    <span>The World Is Yours *</span>
+    <p><span>*</span>The World Is Yours</p>
+    <p><span>*</span>The World Is Yours</p>
   </div>
 </div>
    </section>
 
 <section class="contact">
 <div>
-  <h3>Cesar Lopez</h3>
-  <p>Chicago based photographer focusing on street style and stories told through film.</p>
+  <h3 class="fade-in">Cesar Lopez</h3>
+  <p class="fade-in">Chicago based photographer focusing on street style and stories told through film.</p>
   <div></div>
 
   <ul>
-    <li><span></span>Email</li>
-    <li><span></span>Instagram</li>
-    <li><span></span>Youtube</li>
+    <a href="#" class="fade-in"><li>Instagram</li></a>
+    <a href="#" class="fade-in"><li>Youtube</li></a>
+    <a href="#" class="fade-in"><li>Email</li></a>
   </ul>
 </div>
    </section>

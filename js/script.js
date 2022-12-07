@@ -204,7 +204,10 @@ if (!hasPlayed) {*/
 
 const textrev = gsap.timeline();
    
-   textrev.from(".loader span", 1.2,{
+   textrev.to(".video--container",.1,{
+    borderWidth:340,
+   })
+   .from(".loader span", 1.2,{
     margin: '-50px 0 0 0',
     opacity:0,
     ease: Expo.easeInOut,
@@ -267,15 +270,70 @@ console.log('Testing');
 
 let tl = gsap.timeline({
     scrollTrigger:{
-        trigger:'.headline h1',
-        start: 'center center',
+        trigger:'.scroll-circle',
+        scrub: 0.2,
+        start: "center center",
         ease: "sine",
+        markers: true,
         toggleActions: "play none none reverse",
     }
 });
 
-tl.to('.headline', {y: 50, duration: .8})
-.to('.video--container', {transform: 'translateY(-20vh)', duration : .8, delay: -.8})
+tl.to('.scroll-circle', {
+    y: 250, 
+    borderColor: '#1c1c1c',
+    duration: .9})
+.to('.scroll-circle span',{
+    color:'#1c1c1c',
+    duration:.4,
+    delay:-.9})
+.to('.video--container', {
+    borderWidth: 100, 
+    duration : .9,
+    delay: -.9})
+.to('.tagline h1',{
+    marginLeft: 800, 
+    duration:1.5,
+    delay: -.9,
+    scrollTrigger:{
+        trigger: '.tagline h2',
+        start: 'top center',
+        scrub: true,
+        ease: "sine",
+        markers: true
+    }})
+/*.to('.grid-item img',{
+    y:-40,
+    scrollTrigger:{
+        trigger:'.grid-item',
+        start:'top center',
+        scrub: true,
+        markers: true
+    }})*/
+.to('.marquee div',{
+    left:'-100%',
+    scrollTrigger:
+    {
+    trigger:'.marquee',
+    start:'top center',
+    end:'bottom center',
+    scrub:true,
+    ease: "sine",
+    markers:true
+    }})
+.to('.marquee',{
+    background: 'blue',
+    duration:.1,
+    scrollTrigger:
+    {
+    trigger:'.marquee',
+    start:'top center',
+    end:'center center',
+    scrub:true,
+    ease: "sine",
+    markers:true
+}})
+/*.to('.video--container', {transform: 'translateY(-60px)', duration : .8, delay: -.8})*/
 
 
 gsap.to('progress', {
@@ -284,7 +342,8 @@ gsap.to('progress', {
     scrollTrigger: { 
       trigger: "body",
       scrub: 0.2,
-      // start: "center center"
+       start: "top top",
+       end: "bottom bottom"
     }
   });
 
