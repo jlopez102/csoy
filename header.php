@@ -33,7 +33,7 @@
         
 <div class="loader">
 	<span>
-		CSOY
+		C/SOY
 </span>
 </div>
 
@@ -45,7 +45,7 @@
 	
 		<div class="menu" id="menu">
 		<div class="logo">
-			<a href="<?php bloginfo('url'); ?>">CSOY</a>
+			<a href="<?php bloginfo('url'); ?>">C/SOY</a>
 		</div>
 
 		<button class="nav-trigger" id="nav-trigger"><span></span></button>

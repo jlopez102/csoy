@@ -234,8 +234,8 @@ const textrev = gsap.timeline();
        .from('.logo a', 1, {
            opacity:0,
    })
-   .from('.nav-trigger', 1, {
-           opacity:0,
+   .to('.nav-trigger', 1, {
+           opacity:1,
            
    }, '-=1')
    .from('.headline', 1.5,{
@@ -274,7 +274,7 @@ let tl = gsap.timeline({
         scrub: 0.2,
         start: "center center",
         ease: "sine",
-        markers: true,
+        /*markers: true,*/
         toggleActions: "play none none reverse",
     }
 });
@@ -292,15 +292,15 @@ tl.to('.scroll-circle', {
     duration : .9,
     delay: -.9})
 .to('.tagline h1',{
-    marginLeft: 800, 
+    right:'0%',
     duration:1.5,
     delay: -.9,
     scrollTrigger:{
         trigger: '.tagline h2',
         start: 'top center',
         scrub: true,
-        ease: "sine",
-        markers: true
+        ease: "linear",
+        /*markers: true*/
     }})
 /*.to('.grid-item img',{
     y:-40,
@@ -319,7 +319,7 @@ tl.to('.scroll-circle', {
     end:'bottom center',
     scrub:true,
     ease: "sine",
-    markers:true
+    /*markers:true*/
     }})
 .to('.marquee',{
     background: 'blue',
@@ -331,7 +331,7 @@ tl.to('.scroll-circle', {
     end:'center center',
     scrub:true,
     ease: "sine",
-    markers:true
+    /*markers:true*/
 }})
 /*.to('.video--container', {transform: 'translateY(-60px)', duration : .8, delay: -.8})*/
 

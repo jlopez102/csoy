@@ -43,8 +43,16 @@ get_header();
 <section class="tagline">
 <div>
 <h2 class="fade-in">Quien Soy?(Who Am I)</h2>
-<h1 class="fade-in">CSOY</h1>
+<div class="tagline-scroll">
+<h1 class="fade-in">C/SOY</h1>
+</div>
 <h3 class="fade-in">Photographer/Videographer</h3>
+
+<p class="fade-in">
+  Cesar Lopez is a highly accomplished fashion photographer with a keen eye for 
+  capturing stunning images that tell a story. Based in Chicago, Cesar has built a reputation for his 
+  creativity, attention to detail, and ability to work seamlessly with clients to bring thier vision to life.
+</p>
 </div>
 </section>
 
@@ -97,6 +105,9 @@ get_header();
     
 
 	</main><!-- #main -->
+  <section class="negative-space">
+  <span class="fade-in">*</span>
+   </section>
   
   <section class="blue">
     <div class="marquee">
@@ -108,18 +119,24 @@ get_header();
    </section>
 
 <section class="contact">
-<div>
-  <h3 class="fade-in">Cesar Lopez</h3>
-  <p class="fade-in">Chicago based photographer focusing on street style and stories told through film.</p>
-  <div></div>
+<div class="contact-info">
+  <h2 class="fade-in">CONTACT</h2>
+  <p class="fade-in">Lets work, no matter the size or budget I want to hear about your project</p>
 
+  <h3 class="fade-in">Follow Me</h3>
   <ul>
     <a href="#" class="fade-in"><li>Instagram</li></a>
     <a href="#" class="fade-in"><li>Youtube</li></a>
     <a href="#" class="fade-in"><li>Email</li></a>
   </ul>
+
 </div>
-   </section>
+
+<div class="contact-image">
+  <span class="fade-in"></span>
+</div>
+
+</section>
 
 <?php
 get_sidebar();
